@@ -1,0 +1,40 @@
+SHA1: algoritmo de encriptação utilizado pelo git. Ele converte o arquivo em uma string de 40 caracteres. Qualquer alteração no arquivo gerará uma string diferente
+
+Objetos do git:
+	- Blobs: Funciona como uma bolha que envolve o arquivo adicionado, vinculando metadados à ele
+
+	- tree: É um conjunto de blobs, que também possui metadados.
+
+	- Commit: O commit aponta para árvores e blobs. Através de seus metadados ele armazena dados de alteração, data de commit, descrição, commit anterior...
+
+
+
+	principais comandos:
+
+	git init - create repository
+	git remote add origin <link>
+
+	git config --global (para definir globalmente) user.email "<user's email>"
+
+	git config --global (para definir globalmente) user.name <user's name>
+
+	git status
+	git add *
+	git commit -m "<description>"
+
+
+
+	ciclo de vida:
+	untracked
+	unmodified
+	modified
+	staged
+
+
+	when you change a file, it will be set as "modified" then you add it and it will change to staged, wich means that the file is waiting to be commited. after the commit, it'll be back to unmodified
+
+
+
+
+
+
